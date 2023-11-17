@@ -1,0 +1,814 @@
+
+.hero{
+	background-image: url(../images/gol.jpg);
+	background-repeat: no-repeat;
+	background-position-y:center;
+	background-position-x:center;
+	background-size: cover;
+	height: 100vh;
+	min-height: 700px;
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 45%, 0% 100%);
+    		clip-path: polygon(0% 0%, 100% 0%, 100% 45%, 0% 100%);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.opacity{
+	position: absolute;
+	z-index: -1;
+	height: inherit;
+	min-height: inherit;
+	width: 100%;
+	background-color:rgb(25,97,152);
+    opacity:0.4; 
+}
+
+.header_hero{
+	-webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	z-index: 200;
+}
+
+.wrapper{
+	padding: 5px 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: inherit;
+	align-items: center;
+	flex-direction: inherit;
+}
+
+.logo{
+	color: white;
+	margin: 0;
+	text-align: center;
+}
+
+.logo p{
+	letter-spacing: .04em;
+	font-size: 3em;
+	font-family: var(--brand-font);
+	font-style: italic;
+	margin: 0;
+}
+
+.eslogan{
+	font-size: 1em;
+	font-style: italic;
+	color: white;
+}
+
+.inicia_registrate{
+	height: 70px;
+}
+
+.inicia_registrate ol,
+.inicia_registrate li{
+	height: inherit;
+	margin: 0;
+	padding: 0;
+	list-style: none; /*quita los numeros*/
+	font-size: 1.18em;
+	cursor: pointer;
+}
+
+.header_hero ol{
+	height: inherit;
+	display: flex;
+}
+
+.header_hero a{
+	height: inherit;
+	color: white;
+	display: flex;
+	align-items: center;
+	height: inherit;
+	padding: 0 10px;
+	cursor: pointer;
+	border-bottom: 3px solid transparent;
+}
+
+.header_hero a:hover{
+	border-bottom: 3px solid #ffe109;
+}
+
+.relative_position_wrapper{
+	height: inherit;
+	width: inherit;
+	position: relative;
+	display: flex;
+	justify-content:center;
+	margin-top: 20vh;
+	-webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.signup_button{
+	font-size: 1.16em;
+    font-weight: 600;
+    background-color: white;
+    color: #022B5F;
+    padding: .4em 1.3em;
+	border: none;
+	border-radius: 3px;
+	margin-left: 30px;
+	z-index: 1;
+	cursor:pointer;
+}
+
+.signup_button_background{
+	position: absolute;
+	margin-top: 3.5px;
+	height: 31px;
+	width:130px;
+	margin-left: 25px;
+	text-decoration: none;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid white;
+
+}
+
+
+.signup_button:hover{
+	transform: translate(-5px, 4px);
+	transition: all 0.1s ease-out;
+}
+
+.signup_button:active{
+	color: var(--secondary-color-light-blue);
+    background: lightgray;   
+}
+
+/* .new-signup-button{
+	border: 3px solid white;
+	border-radius: 2px;
+	background: transparent;
+	color: white;
+	padding: 10px 50px;
+	cursor: pointer;
+	transition: all 0.1s ease-out;
+} */
+
+
+.new_signup_button {
+	font-family: var(--main-font);
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	padding: 15px 80px;
+	border-radius: 2px;
+	background: white;
+	color: #183161;
+	font-weight: bold;
+	border: 2px solid transparent;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	margin-top: 25px;
+	filter: hue-rotate(0deg);
+	transition: all 0.1s linear;
+	letter-spacing: 0.5px;
+}
+.new_signup_button:hover {
+	background: transparent;
+	color: white;
+	border: 2px solid white;
+  }
+
+  .new_signup_button span {
+	position: absolute;
+	display: block;
+  }
+  .new_signup_button span:nth-child(1) {
+	/* filter: hue-rotate(0deg); */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(90deg, transparent, #183161);
+	animation: animate1 1s linear infinite;
+  }
+  @keyframes animate1 {
+	0% {
+	  left: -100%;
+	}
+	50%, 100% {
+	  left: 100%;
+	}
+  }
+  .new_signup_button span:nth-child(2) {
+	/* filter: hue-rotate(60deg); */
+	top: -100%;
+	right: 0;
+	width: 3px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #183161);
+	animation: animate2 1s linear infinite;
+	animation-delay: 0.25s;
+  }
+  @keyframes animate2 {
+	0% {
+	  top: -100%;
+	}
+	50%, 100% {
+	  top: 100%;
+	}
+  }
+  .new_signup_button span:nth-child(3) {
+	/* filter: hue-rotate(120deg); */
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	background: linear-gradient(270deg, transparent, #183161);
+	animation: animate3 1s linear infinite;
+	animation-delay: 0.5s;
+  }
+  @keyframes animate3 {
+	0% {
+	  right: -100%;
+	  height: 3px;
+	}
+	50%, 100% {
+	  height: 2px;
+	  right: 100%;
+	}
+  }
+  .new_signup_button span:nth-child(4) {
+	/* filter: hue-rotate(300deg); */
+	bottom: -100%;
+	left: 0;
+	width: 3px;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #183161);
+	animation: animate4 1s linear infinite;
+	animation-delay: 0.75s;
+  }
+  @keyframes animate4 {
+	0% {
+	  bottom: -100%;
+	}
+	50%, 100% {
+	  bottom: 100%;
+	}
+  }
+
+  .new_signup_button:hover span:nth-child(1) {
+	background: linear-gradient(90deg, transparent, transparent);
+  }
+  .new_signup_button:hover span:nth-child(2) {
+	background: linear-gradient(180deg, transparent, transparent);
+  }
+  .new_signup_button:hover span:nth-child(3) {
+	background: linear-gradient(270deg, transparent, transparent);
+  }
+  .new_signup_button:hover span:nth-child(4) {
+	background: linear-gradient(360deg, transparent, transparent);
+  }
+
+.text_explanation_wrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: flex-end;
+	padding: 0 1em;
+}
+
+.text_explanation{
+	padding: 0 0 .5em 0;
+	font-size: 2.8em;
+	font-style: italic;
+	color: gray;
+	margin: 0;
+	position: absolute;
+	width: 10em;
+	font-family: var(--p-alternative-font);
+
+}
+
+.text_explanation strong{
+	color: var(--secondary-color-light-blue);
+	font-weight: 600;
+}
+/*FLECHA ariiba*/
+.flecha{
+	position: absolute;
+	text-align: center;
+	height: 10%;
+	left: 50%;
+}
+
+.contenidoflecha {
+  transform: translate(-50%, -50%);
+  /* Arrow & Hover Animation */
+}
+.contenidoflecha a {
+
+  	cursor: pointer;
+	font-size: 1.5em;
+	font-weight: 600;
+	text-decoration: none;
+	font-style: italic;
+	color: gray;
+  	margin: 0;
+}
+
+.contenidoflecha:hover a {
+  color: #022B5F;
+  transition: all 0.2s ease-out;
+}
+
+#more_arrows {
+  width: 75px;
+  height: 65px;
+}
+.contenidoflecha:hover .polygon {
+  fill: #ffe109;
+  transition: all 0.2s ease-out;
+}
+.contenidoflecha:hover .polygon.arrow_bottom {
+  transform: translateY(-18px);
+}
+.contenidoflecha:hover .polygon.arrow_top {
+  transform: translateY(18px);
+}
+.polygon {
+  fill: #022B5F;
+  transition: all 0.2s ease-out;
+}
+.polygon.arrow_middle {
+  opacity: 0.75;
+}
+.polygon.arrow_top {
+  opacity: 0.5;
+}
+/*FLECHA ariiba*/
+.wrapper_cubes{
+	box-sizing: initial;
+	position: relative;
+	padding: 280px 0 250px;
+	margin: auto;
+	display: flex;
+	width: 100%;
+	height: 250px;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 1150px;
+}
+
+.number_decoration{
+	height: 700px;
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	align-items: center;
+}
+
+.number{
+	font-family: var(--brand-font);
+	color: lightgray;
+	font-weight: 1000;
+	z-index: -1;
+}
+
+.one {
+	font-size: 31em;
+	position: relative;
+	font-weight: 800;
+	top: -15px;
+}
+
+.two{
+	font-size: 35em;
+}
+
+.three {
+	font-size: 28em;
+}
+
+.cubes{
+	/* border: 2px solid gray; */
+	background-color: transparent;
+	border-radius: 2px;
+	margin: 5px;
+	flex-shrink: 0;
+	display: inherit;
+	justify-content: center;
+	align-items: center;
+	transform: rotate(45deg);
+}
+
+.cube_one{
+	height: 70%;
+	width: 175px;
+}
+
+.cube_two{
+	height: 100%;
+	width: 250px;
+}
+
+.cube_three{
+	height: 70%;
+	width: 175px;
+}
+
+.circles{
+	opacity: 0.8;
+	display: inherit;/*para las letras de adentro*/
+	align-items: center;/*para las letras de adentro*/
+	justify-content: center;/*para las letras de adentro*/
+	text-align: center;
+	color: white;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius: 50%;
+	transform: rotate(-45deg);
+}
+
+.circles p{
+	padding: 0em 2em;
+}
+
+.circles strong{
+	font-size: 1.2em;
+}
+
+.circle_one{
+	height: 90%;
+	width: 90%;
+	background-color: #022B5F;
+}
+
+.circle_two{
+	height: 90%;
+	width: 90%;
+	background-color: #8195af;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+.circle_three{
+	height: 90%;
+	width: 90%;
+	background-color: #03153E;
+}
+
+.circle_three p{
+	padding: 0em 1em;
+}
+
+/*top-l , top-r bot-l, bot-l */
+.decoration{
+	background-color: #e4e4e4;
+	 -webkit-clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
+   			clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.decoration_background{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-repeat: no-repeat;
+	background-position-y:center;
+	background-position-x:center;
+	background-size: cover;
+	height: 100vh;
+	background-image: url("../images/futbolistaOscuro.jpg");
+ -webkit-clip-path: polygon(0% 30%, 100% 0%, 100% 60%, 0% 100%);
+   		clip-path: polygon(0% 30%, 100% 0%, 100% 60%, 0% 100%);
+}
+
+.decoration_text{
+	color:white;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	font-size: 1em;
+	gap: 10px;
+}
+
+.decoration_text_seccion2{
+	display: flex;
+}
+
+.decoration_text_seccion2 a:hover{
+	color: white;
+}
+
+.decoration_text h1{
+	font-size: 3.5em;
+	margin: 0;
+	padding-right: 1em;
+	font-family: var(--p-alternative-font);
+
+}
+
+.decoration_text h1 strong{
+	font-size: 2em;
+	transform: rotate(10deg);
+}
+
+.ahora {
+	display: flex;
+	flex-direction: column;
+	border-right: 2px solid white;
+	text-align: center;
+}
+
+.nuncaMas{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.positive{
+	color: #02ff00;
+	font-size: 1.8em;
+
+}
+
+.negative{
+	color: #ff0000;
+	font-size: 1.8em;
+}
+
+.decoration_text a{
+	font-size: 1.3em;
+	color:white;
+	margin: 12px;
+}
+
+.decoration_text h1, .decoration_-text a{
+	color: white;
+	text-decoration: none;
+	cursor: auto;
+}
+
+
+.centro_deportivo{
+	display: flex;
+	flex-direction: column;
+	padding: 150px 0 120px;
+    background-color: #fff;
+    background: -prefix-linear-gradient(top,#e4e4e4 , #ffffff); 
+    background: linear-gradient(to bottom,#e4e4e4 , #ffffff);
+}
+.question{
+	text-align: center;
+}
+
+.question h2{
+	margin: 0 ;
+	margin-bottom: 10px;
+	color: var(--secondary-color-light-blue);
+	font-family: var(--p-alternative-font);
+
+}
+
+.question p{
+	font-size: 1.15em;
+	display: flex;
+	justify-content: center;
+	color:rgb(102, 102, 102);
+	width: 80%;
+	margin: auto;
+}
+
+.btn_message{
+	margin: 20px 0;
+}
+
+
+.icon_usuario{
+	 color: white; 	
+	 font-size:3em; 	
+	 display: none; 
+	 cursor: pointer;
+	 padding: 10px;
+}
+
+.menu_mobile{
+	display: none;
+}
+
+.btn_inicia_mobile{
+	display: none;
+}
+
+.btn_registrate_mobile{
+	display: none;
+}
+
+
+
+@media screen and (max-width: 1023px) {
+	.hero{
+		-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 45%, 0% 80%);
+		clip-path: polygon(0% 0%, 100% 0%, 100% 45%, 0% 80%);
+		/* transition: all 0.3s ease; */
+	}
+
+	.flecha{
+		height: 13%;
+		transform: scale(0.9);
+		left: 90vw;
+		transition: all 0.3s ease;
+	}
+
+	.content a{
+		font-size: 1em;
+	}
+
+	.wrapper_cubes{
+		flex-direction: column;
+	}
+
+	.cubes{
+		transform: rotate(0deg);
+		transition: all 0.3s ease;
+	}
+
+	.circles{
+		transform: rotate(0deg);
+		transition: all 0.3s ease;
+	}
+
+	.number_decoration{
+		flex-direction: column;
+	}
+
+	.two{
+		font-size: 13em;
+	}
+
+	.one{
+		top: 0;
+		font-size: 10em
+	}
+
+	.three{
+		font-size: 10em;
+	}
+
+	.decoration_text{
+		font-size: 0.7em;
+		margin-bottom: 50px;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+	
+	.header_hero{
+		font-size: 0.9em;
+	}
+
+	.hero{
+		-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 45%, 0% 80%);
+		clip-path: polygon(0% 0%, 100% 0%, 100% 45%, 0% 80%);
+		min-height: 100vh;
+	}
+
+	.text_explanation{
+		font-size: 2.3em;
+	}
+
+	.inicia_registrate{
+		display: none;
+	}
+
+	.icon_usuario{
+		display: block;
+	}
+
+
+	.flecha{
+		display: none;
+	}
+
+	.flex_container_inputs {
+		display: inline-block;
+		width: 100%;
+	}
+
+	.columna_inputs{
+		width: 100%;
+	}
+
+	.menu_mobile{
+	    position: fixed;
+	    background: var(--color-very-light-blue);
+		opacity: 0.9;
+	    z-index: 100;
+	    top: 0;
+	    width: 100%;
+	    display: block;
+	    bottom: 0;
+	}
+
+	.btn_inicia_mobile{
+		height: 70px;
+		margin-bottom: 10px;
+		font-size: 1.4em;
+		font-weight: 600;
+		background-color: white;
+		color: #022B5F;
+		width: 100%;
+	    -webkit-transform: scaleX(-1);
+	    -moz-transform: scaleX(-1);
+	    transform: scaleX(-1);
+	    margin-top: 20vh;
+	    transition: .5s;
+	    display: block;
+	}
+
+	.btn_registrate_mobile{
+		height: 70px;
+		font-size: 1.4em;
+		font-weight: 600;
+		background-color: white;
+		color: #022B5F;
+		width: 100%;
+	    -webkit-transform: scaleX(-1);
+	    -moz-transform: scaleX(-1);
+	    transform: scaleX(-1);
+	     transition: .5s;
+		display: block;
+	}
+
+	.decoration_text h1{
+		padding: 0;
+	}
+
+	.relative_position_wrapper{
+		/* display: none; */
+	}
+
+	.decoration_text_seccion2{
+		display: block;
+	}
+
+	.decoration_text_seccion2 ol{
+		padding: 0;
+	}
+
+	.ahora{
+		border-right: none;
+		border-bottom: 2px solid white;
+	}
+
+	.new_signup_button{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.text_explanation{
+		padding: 0 0 2em 0;
+	}
+
+	.decoration_text{
+		font-size: 0.7em;
+		margin-bottom: 40px;
+	}
+
+	
+}
+
+@media screen and (max-width: 320px) {
+	.text_explanation{
+		font-size: 1.5em;
+		padding: 0 0 2.2em 0;
+	}
+
+	.decoration{
+		font-size: 0.8em;
+	}
+
+	.decoration_text{
+		font-size: 0.7em;
+		margin-bottom: 25px;
+	}
+
+
+}
