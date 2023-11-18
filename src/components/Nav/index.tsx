@@ -9,7 +9,8 @@ function Nav() {
             <div className={styles.nav_img_container}>
                 <Image src="/images/logo.svg" layout="fill" objectFit="contain" />
             </div>
-                <h3>Principales 50 Criptomonedas por capitalización de mercado</h3>
+
+            <h3>Principales 50 Criptomonedas del mercado</h3>
             
         </div>
     );

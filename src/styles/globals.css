@@ -11,80 +11,19 @@
   --off-white: #faf8f7;
   --just-white: #fff;
 }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
   font-family: "DM sans", "Sans serif";
   scroll-behavior: smooth;
 }
-header {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  min-width: 320px;
-  height: 300px;
-  text-align: center;
-  background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
-}
-header img {
-  width: 150px;
-  height: 25px;
-  margin-top: 60px;
-  align-self: center; /*aliniea el elemento que se encuentra dentro de un padre con display flex*/
-}
-.header--title-container {
-  width: 90%;
-  min-width: 288px;
-  max-width: 900px;
-  height: 218px;
-  margin-top: 40px;
-  align-self: center;
-  text-align: center;
-}
-.header--title-container h1 {
-  font-size: 2.4rem;
-  font-weight: bold;
-  line-height: 2.6rem;
-  color: var(--just-white);
-}
-.header--title-container p {
-  margin-top: 25px;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.8rem;
-  color: var(--soft-orange);
-}
-.header--title-container .header--button {
-  position: absolute;
-  left: calc(50% - 118px);
-  top: 240px;
-  display: block;
-  margin-top: 35px;
-  padding: 15px;
-  width: 229px;
-  height: 48px;
-  background-color: var(--off-white);
-  box-shadow: 0px 4px 8px rgba(89, 73, 0, 0.16);
-  border: none;
-  border-radius: 5px;
-  font-size: 1.4rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--black);
-}
-.header--button span {
-  display: inline-block;
-  width: 13px;
-  margin-left: 10px;
-  height: 8px;
-  /* background-image: url(../assets/icons/down-arrow.svg); */
-}
+
 main {
   min-width: 320px;
   width: 100%;
@@ -92,20 +31,20 @@ main {
   background-color: var(--off-white);
 }
 
-.main-exchange-container {
+.main_exchange_container {
   width: 100%;
   height: auto;
   padding-top: 80px;
   padding-bottom: 30px;
   text-align: center;
 }
-.main-exchange-container--title {
+.main_exchange_container_title {
   width: 90%;
   min-width: 288px;
   max-width: 900px;
   margin: 0 auto;
 }
-.main-exchange-container .backgroundImg {
+.main_exchange_container .backgroundImg {
   width: 200px;
   height: 200px;
   margin: 0 auto;
@@ -115,21 +54,21 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
-.main-exchange-container--title h2 {
+.main_exchange_container_title h2 {
   margin-bottom: 30px;
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--black);
 }
-.main-exchange-container--title p {
+.main_exchange_container_title p {
   margin-bottom: 30px;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.6rem;
   color: #757575;
 }
-.main-currency-table {
+.main_currency_table {
   width: 70%;
   min-width: 235px;
   max-width: 500px;
@@ -137,7 +76,7 @@ main {
   margin: auto;
   font-family: "Inter", sans-serif;
 }
-.main-currency-table .currency-title {
+.main_currency_table .currency_title {
   margin-bottom: 15px;
   font-size: 1.8rem;
   font-weight: bold;
@@ -146,19 +85,19 @@ main {
   text-align: center;
   margin-left: 30px;
 }
-.currency-table--container {
+.currency_table_container {
   width: 90%;
   min-width: 230px;
   max-width: 300px;
   height: 250px;
   margin: 0 auto;
 }
-.currency-table--container table {
+.currency_table_container table {
   width: 100%;
   height: 100%;
   border-radius: 20%;
 }
-.currency-table--container td {
+.currency_table_container td {
   width: 50%;
   font-size: 1.6rem;
   font-weight: 500;
@@ -166,25 +105,25 @@ main {
   color: var(--grey);
   background-color: var(--just-white);
 }
-.currency-table--container .table__top-left {
+.currency_table_container .table_top_left {
   border-top-left-radius: 15px;
 }
-.currency-table--container .table__top-right {
+.currency_table_container .table_top_right {
   border-top-right-radius: 15px;
 }
-.currency-table--container .table__bottom-left {
+.currency_table_container .table_bottom_left {
   border-bottom-left-radius: 15px;
 }
-.currency-table--container .table__bottom-right {
+.currency_table_container .table_bottom_right {
   border-bottom-right-radius: 15px;
 }
-.currency-table--container .table__right {
+.currency_table_container .table_right {
   font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.7rem;
   color: #757575;
 }
-.currency-table--container .down {
+.currency_table_container .down {
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -194,7 +133,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
 }
-.currency-table--container .up {
+.currency_table_container .up {
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -205,7 +144,7 @@ main {
   background-repeat: no-repeat;
 }
 
-.main-currency-table .comisions-title {
+.main_currency_table .comisions_title {
   margin-bottom: 15px;
   font-size: 1.8rem;
   font-weight: bold;
@@ -214,10 +153,10 @@ main {
   text-align: center;
   margin-left: 30px;
 }
-.comisions-table {
+.comisions_table {
   /* display: none; */
 }
-.date-container {
+.date_container {
   width: 190px;
   height: 30px;
   margin: 0 auto;
@@ -225,20 +164,20 @@ main {
   padding: 8px;
   border-radius: 8px;
 }
-.date-currency {
+.date_currency {
   background-color: var(--soft-orange);
 }
-.date-container p {
+.date_container p {
   font-size: 1.2rem;
   line-height: 1.5rem;
   color: var(--warn-black);
 }
 
-.date-comisions {
+.date_comisions {
   background-color: var(--soft-blue);
 }
 
-.name-product-detail {
+.name_product_detail {
   position: relative;
   width: 100%;
   min-width: 320px;
@@ -246,7 +185,7 @@ main {
   padding: 20px 10px;
   background-color: var(--warn-black);
 }
-.product--detail-batata-logo {
+.product_detail_batata_logo {
   position: absolute;
   width: 40px;
   height: 25px;
@@ -254,7 +193,7 @@ main {
   top: -10px;
   background-image: url(/assets/icons/batata.svg);
 }
-.product-detail--title {
+.product_detail_title {
   width: 90%;
   min-width: 288px;
   height: auto;
@@ -262,21 +201,21 @@ main {
   margin-top: 50px;
   text-align: center;
 }
-.product-detail--title h2 {
+.product_detail_title h2 {
   margin-bottom: 20px;
   font-size: 2.4rem;
   color: var(--just-white);
   font-weight: bold;
   line-height: 2.6rem;
 }
-.product-detail--title p {
+.product_detail_title p {
   margin-bottom: 20px;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: #808080;
 }
-.product-detail--card {
+.product_detail_card {
   width: 90%;
   height: 150px;
   min-width: 288px;
@@ -287,7 +226,7 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
   padding: 10px;
 }
-.product-detail--card .icon {
+.product_detail_card .icon {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -296,33 +235,33 @@ main {
   background-repeat: no-repeat;
   background-position: center;
 }
-.product-detail--card .clock {
+.product_detail_card .clock {
   background-image: url(/assets/icons/clock.svg);
 }
-.product-detail--card .eye {
+.product_detail_card .eye {
   background-image: url(/assets/icons/eye.svg);
 }
-.product-detail--card .dollar {
+.product_detail_card .dollar {
   background-image: url(/assets/icons/dollar-sign.svg);
 }
-.product-detail--card .check {
+.product_detail_card .check {
   background-image: url(/assets/icons/check-circle.svg);
 }
 
-.product--card-title {
+.product_card_title {
   margin-bottom: 15px;
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.8rem;
   color: var(--just-white);
 }
-.product--card-body {
+.product_card_body {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: #808080;
 }
-.bitcoin-img-container {
+.bitcoin_img_container {
   width: 100%;
   min-width: 320px;
   height: 50vh;
@@ -331,7 +270,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.bitcoin-img-container h2 {
+.bitcoin_img_container h2 {
   padding-top: 60px;
   font-size: 2.4rem;
   font-weight: bold;
@@ -339,34 +278,34 @@ main {
   color: var(--just-white);
   text-align: center;
 }
-.main-plans-container {
+.main_plans_container {
   width: 100%;
   min-width: 320px;
   padding-bottom: 70px;
   text-align: center;
 }
-.plans--title {
+.plans_title {
   width: 90%;
   min-width: 288px;
   height: auto;
   margin: 0 auto;
   margin-bottom: 50px;
 }
-.plans--title h2 {
+.plans_title h2 {
   padding-top: 50px;
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2.6rem;
   color: var(--black);
 }
-.plans--title p {
+.plans_title p {
   padding-top: 30px;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: #757575;
 }
-.plans-container--card {
+.plans_container_card {
   position: relative;
   scroll-snap-align: center;
   width: 60%;
@@ -392,32 +331,32 @@ main {
   font-size: 1.2rem;
   padding: 6px;
 }
-.plan-card--title {
+.plan_card_title {
   padding-top: 30px;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: black;
 }
-.plan-card--price {
+.plan_card_price {
   padding: 5px 0;
   font-size: 5.2rem;
   font-weight: bold;
   line-height: 5.3rem;
   color: black;
 }
-.plan-card--price span {
+.plan_card_price span {
   font-size: 1.2rem;
   font-weight: 300;
   top: 40px;
   position: absolute;
   left: calc(50% - 40px);
 }
-.plan-card--saving {
+.plan_card_saving {
   font-size: 1.2rem;
   color: #757575;
 }
-.plan-card--ca {
+.plan_card_ca {
   width: 150px;
   height: 48px;
   margin-top: 20px;
@@ -431,25 +370,25 @@ main {
   font-family: "DM sans", "Sans serif";
   cursor: pointer;
 }
-.plan-card--ca span {
+.plan_card_ca span {
   display: inline-block;
   width: 20px;
   height: 20px;
   background-image: url(/assets/icons/orange-right-arrow.svg);
   vertical-align: text-bottom;
 }
-.plans-container--slider {
+.plans_container_slider {
   display: flex;
   height: 316px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
 }
-.plans-container--slider::-webkit-scrollbar {
+.plans_container_slider::-webkit-scrollbar {
   background-color: var(--soft-orange);
   height: 3px;
 }
-.plans-container--slider::-webkit-scrollbar-thumb {
+.plans_container_slider::-webkit-scrollbar-thumb {
   background-color: var(--bitcoin-orange);
 }
 
@@ -482,19 +421,19 @@ footer .left ul {
 
 
 @media screen and (min-width: 930px) {
-  .product-cards--container {
+  .product_cards_container {
     display: flex;
     flex-wrap: wrap;
     width: 930px;
     margin: 0 auto;
   }
-  .main-tables-container {
+  .main_tables_container {
     display: flex;
     /* flex-wrap: wrap; */
     width: 930px;
     margin: 0 auto;
   }
-  .plans-container--slider {
+  .plans_container_slider {
     justify-content: center;
   }
 }
