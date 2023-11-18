@@ -3,13 +3,9 @@ import {ROUTE_ENDPOINT} from "../../utils/route";
 import {
     currencySuccess,
     currencyError,
-    currencyFacebookSuccess,
-    currencyFacebookError,
     currencyResetStates,
 } from "./actions";
 import {CURRENCY_REQUESTING} from "./constants";
-import {clientSet} from "../../client/actions";
-import {userGetSuccess} from "../user/actions";
 
 const currencyUrl = `${ROUTE_ENDPOINT}/ticker/?id=80`;
 

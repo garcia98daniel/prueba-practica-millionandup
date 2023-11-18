@@ -34,26 +34,17 @@ const reducer = (state = initialState, action) => {
                 requesting: false,
                 error: action.error,
             };
-            case CURRENCY_SHOW_HIDDEN_MODAL:
+           
+        case CURRENCY_RESET_STATES:
             return {
                 ...state,
-                modal_open: action.value,
+                requesting: false,
+                success: false,
+                error: '',
+                currency:[],
             };
-            case CURRENCY_CHANGE_FORM:
-                return {
-                    ...state,
-                    values: {...state.values, [action.key]: action.value}
-                };
-            case CURRENCY_RESET_STATES:
-                return {
-                    ...state,
-                    requesting: false,
-                    success: false,
-                    error: '',
-                    currency:[],
-                };
-                    default:
-            return state;
+                default:
+        return state;
     }
 };
 
