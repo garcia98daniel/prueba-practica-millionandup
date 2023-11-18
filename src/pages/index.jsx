@@ -16,7 +16,7 @@ import { useRouter } from 'next/router';
 //redux
 // import { useDispatch, useSelector } from 'react-redux';
 //actions
-// import {loginShowHiddenModal} from "../redux/auth/login/actions";
+// import {currencyRequesting} from "../redux/currency/actions";
 function index(props) {
   return (
     <div>

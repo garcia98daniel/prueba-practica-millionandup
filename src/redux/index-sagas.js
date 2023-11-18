@@ -1,18 +1,10 @@
 import {all, fork} from 'redux-saga/effects';
 //
-import loginSagas from './auth/login/sagas';
-import registerSagas from './auth/register/sagas';
-import logoutSagas from './auth/logout/sagas';
-import forgotSagas from './auth/forgot/sagas';
-import userSagas from './auth/user/sagas';
+import currencySagas from './currency/sagas';
 
 function* IndexSagas() {
     yield all([
-        fork(loginSagas),
-        fork(logoutSagas),
-        fork(registerSagas),
-        fork(userSagas),
-        fork(forgotSagas),
+        fork(currencySagas),
     ]);
 }
 export default IndexSagas
