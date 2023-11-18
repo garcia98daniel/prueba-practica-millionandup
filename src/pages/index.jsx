@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from 'next/router';
+import Nav from "../components/Nav/index.tsx";
 
 //components
 
@@ -20,7 +21,8 @@ import { useRouter } from 'next/router';
 function index(props) {
   return (
     <div>
-      hola mundo
+      <Nav />
+      
     </div>
   );
 }
