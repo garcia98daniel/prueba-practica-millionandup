@@ -9,7 +9,7 @@ import Hero from "../components/Hero/index";
 import CurrenciesSection from "../components/CurrenciesSection/index";
 
 //semantic ui components
-// import { Button, Icon, Transition} from "semantic-ui-react";
+import { Input, Button } from "semantic-ui-react";
 // import { motion } from "framer-motion";
 
 //styles
@@ -22,15 +22,22 @@ import Footer from "../components/Footer/index";
 // import {currencyRequesting} from "../redux/currency/actions";
 function index() {
   return (
-    <div>
+    <>
       <Nav />
       <Hero/>
       <main className={styles.main}>
           <CurrenciesSection />
-      </main>
 
+          <section className={styles.bitcoin_img_container}>
+            <h2>Manténgase al tanto de las criptomonedas. Todo el tiempo, en cualquier momento.</h2>
+            <p>Por favor, mantenme informado por correo electrónico sobre las últimas noticias relacionadas con criptomonedas, resultados de investigaciones, programas de recompensas, actualizaciones de eventos, listados de monedas y cualquier otra información relevante de CoinMarketCap.</p>
+            <Input fluid placeholder='Ingresa tu dirección de correo electronico' />
+            <br />
+            <Button fluid color='black' >Suscribirse</Button>
+          </section>
+      </main>
     <Footer/>
-    </div>
+    </>
   );
 }
 

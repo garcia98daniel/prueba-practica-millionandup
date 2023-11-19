@@ -6,3 +6,25 @@
 	height: auto;
 	background-color: var(--off-white);
 }
+
+.bitcoin_img_container {
+	width: 100%;
+	min-width: 320px;
+	background-image: url("/images/newsletter_bg_light.svg");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	max-width: 1200px;
+	margin: 0 auto;
+	margin-top: 100px;
+	padding-bottom: 160px;
+}
+
+.bitcoin_img_container h2 {
+	padding-top: 60px;
+	font-size: 2.4rem;
+	font-weight: bold;
+	line-height: 2.6rem;
+	color: black;
+	text-align: center;
+}
