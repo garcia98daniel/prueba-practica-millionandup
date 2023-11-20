@@ -9,8 +9,9 @@ export const currencyRequesting = (values) => ({
     values,
 });
 
-export const currencySuccess = () => ({
+export const currencySuccess = (currencies) => ({
     type: CURRENCY_SUCCESS,
+    currencies,
 });
 
 export const currencyError = (error) => ({

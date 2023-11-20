@@ -27,6 +27,7 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 requesting: false,
                 success: true,
+                currency: action.currencies
             };
         case CURRENCY_ERROR:
             return {
@@ -41,7 +42,6 @@ const reducer = (state = initialState, action) => {
                 requesting: false,
                 success: false,
                 error: '',
-                currency:[],
             };
                 default:
         return state;

@@ -32,7 +32,7 @@ function Nav() {
                     </div>
                 </div>
 
-            <h3>Principales 50 Criptomonedas del mercado</h3>
+            <h3>Principales 100 Criptomonedas del mercado</h3>
             
         </div>
     );

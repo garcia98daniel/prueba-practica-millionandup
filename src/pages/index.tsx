@@ -16,10 +16,7 @@ import { Input, Button } from "semantic-ui-react";
 import styles from "./styles.module.css";
 import Footer from "../components/Footer/index";
 
-//redux
-// import { useDispatch, useSelector } from 'react-redux';
-//actions
-// import {currencyRequesting} from "../redux/currency/actions";
+
 function index() {
   return (
     <>
