@@ -26,6 +26,7 @@ function Home() {
       <Nav />
       <Hero/>
       <main className={styles.main}>
+        
           <CurrenciesSection /> 
 
           <section className={styles.bitcoin_img_container}>
@@ -35,6 +36,7 @@ function Home() {
             <br />
             <Button fluid color='black' >{t("subscribe_section_btn_txt")}</Button>
           </section>
+
       </main>
     <Footer/>
     </>

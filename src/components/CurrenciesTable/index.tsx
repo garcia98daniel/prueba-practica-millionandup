@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { currencyRequesting } from "../../redux/currency/actions";
 import { ICurrencyState, Currency } from "../../ts-types/custom.types";
-import { Input } from "semantic-ui-react";
 
 //styles
 import styles from "./styles.module.css";

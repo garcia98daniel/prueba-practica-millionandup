@@ -1,3 +1,10 @@
+import {
+  CURRENCY_ERROR,
+  CURRENCY_REQUESTING,
+  CURRENCY_RESET_STATES,
+  CURRENCY_SUCCESS,
+}  from "../redux/currency/constants";
+
 export interface ICurrencyState{
   currencyReducer: {
     requesting: boolean,
@@ -5,6 +12,13 @@ export interface ICurrencyState{
     error: string,
     currency: Currency[],
   }
+}
+
+export interface CurrencyReducerInitialState {
+  requesting: boolean;
+  success: boolean;
+  error: string;
+  currency: any[]; // Reemplaza 'any[]' con el tipo correcto de 'currency'
 }
 
 export interface Currency {
@@ -24,4 +38,24 @@ export interface Currency {
   csupply: string;
   tsupply: string;
   msupply: string;
+}
+
+
+// these are the actions 
+export interface CurrencyRequestingAction {
+  type: typeof CURRENCY_REQUESTING;
+}
+
+export interface CurrencySuccessAction {
+  type: typeof CURRENCY_SUCCESS;
+  currencies: Currency[]; // Reemplaza 'any[]' con el tipo correcto de 'currencies'
+}
+
+export interface CurrencyErrorAction {
+  type: typeof CURRENCY_ERROR;
+  error: any; // Reemplaza 'any' con el tipo correcto de 'error'
+}
+
+export interface CurrencyResetStatesAction {
+  type: typeof CURRENCY_RESET_STATES;
 }

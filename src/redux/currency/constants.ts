@@ -1,0 +1,5 @@
+export const CURRENCY_REQUESTING: string = 'CURRENCY_REQUESTING';
+export const CURRENCY_SUCCESS: string = 'CURRENCY_SUCCESS';
+export const CURRENCY_ERROR: string = 'CURRENCY_ERROR';
+
+export const CURRENCY_RESET_STATES: string = 'CURRENCY_RESET_STATES';
