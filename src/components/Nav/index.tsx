@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ChangeEvent } from 'react';
 import { useRouter } from 'next/router';
 import styles from './styles.module.css';
 import Link from 'next/link';
@@ -6,7 +6,13 @@ import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 import { Select } from 'semantic-ui-react';
 
-const languages = [
+interface LanguageOption {
+  key: string;
+  value: string;
+  text: string;
+}
+
+const languages: LanguageOption[] = [
   { key: 'es', value: 'es', text: 'Español' },
   { key: 'en', value: 'en', text: 'Inglés' },
 ];
@@ -15,9 +21,9 @@ function Nav() {
   const { t, i18n } = useTranslation("global");
   const router = useRouter();
 
-  const handleChangeLanguage = (e, { value }) => {
+  const handleChangeLanguage = (e: React.SyntheticEvent<HTMLElement>, { value }: { value: string }) => {
     i18n.changeLanguage(value);
-    router.push('/'+value);
+    router.push('/' + value);
   };
 
   return (
