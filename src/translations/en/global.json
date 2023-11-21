@@ -1,0 +1,30 @@
+
+{
+    "nav_Our_website": "Our Site",
+    "nav_input_language_placeholder": "Select your language",
+    "nav_txt_1": "Top 100 Cryptocurrencies in the market",
+    "hero_txt_1": "The next revolution in cryptocurrency exchange",
+    "hero_txt_2": "Crypto Million helps you navigate through different prices and trends",
+    "hero_txt_3": "View cryptocurrencies",
+
+    "currencies_section_txt_1": "We visualize all exchange rates.",
+    "currencies_section_txt_2": "We bring real-time information from the world's most important exchanges.",
+
+    "currenciesTable_search_currency_input": "Search for your crypto...",
+    "currenciesTable_header_symbol_txt": "Symbol",
+    "currenciesTable_header_name_txt": "Name",
+    "currenciesTable_header_priceUSD_txt": "Price (USD)",
+    "currenciesTable_header_24h_txt": "24h %",
+    "currenciesTable_header_1h_txt": "1h %",
+    "currenciesTable_header_7h_txt": "7d %",
+    "currenciesTable_header_marketCap_txt": "Market Cap",
+    "currenciesTable_header_volumen24h_txt": "Volume 24h",
+    "currenciesTable_header_supply_txt": "Circulating Supply",
+
+    "subscribe_section_txt_1": "Stay updated on cryptocurrencies. All the time, anytime.",
+    "subscribe_section_txt_2": "Please keep me informed via email about the latest cryptocurrency-related news, research findings, reward programs, event updates, coin listings, and any other relevant information from CoinMarketCap.",
+    "subscribe_input_txt": "Enter your email address",
+    "subscribe_section_btn_txt": "Subscribe",
+
+    "_txt": ""
+}

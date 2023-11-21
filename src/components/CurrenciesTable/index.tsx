@@ -37,7 +37,7 @@ function CurrenciesTable() {
     <>
       <Input
         icon="search"
-        placeholder="Search by name..."
+        placeholder={t("currenciesTable_search_currency_input")}
         value={filterText}
         onChange={(e, { value }) => setFilterText(value)}
       />
@@ -45,19 +45,19 @@ function CurrenciesTable() {
     <Table celled>
       <Table.Header>
         <Table.Row>
-          <Table.HeaderCell>{t("Symbol")}</Table.HeaderCell>
+          <Table.HeaderCell>{t("currenciesTable_header_symbol_txt")}</Table.HeaderCell>
           {/* <Table.HeaderCell>{t("Symbol")}</Table.HeaderCell> */}
-          <Table.HeaderCell>{t("Name")}</Table.HeaderCell>
+          <Table.HeaderCell>{t("currenciesTable_header_name_txt")}</Table.HeaderCell>
           {/* <Table.HeaderCell>{t("Rank")}</Table.HeaderCell> */}
-          <Table.HeaderCell>{t("Price (USD)")}</Table.HeaderCell>
-          <Table.HeaderCell>{t("% Change 24h")}</Table.HeaderCell>
-          <Table.HeaderCell>{t("% Change 1h")}</Table.HeaderCell>
-          <Table.HeaderCell>{t("% Change 7d")}</Table.HeaderCell>
+          <Table.HeaderCell>{t("currenciesTable_header_priceUSD_txt")}</Table.HeaderCell>
+          <Table.HeaderCell>{t("currenciesTable_header_24h_txt")}</Table.HeaderCell>
+          <Table.HeaderCell>{t("currenciesTable_header_1h_txt")}</Table.HeaderCell>
+          <Table.HeaderCell>{t("currenciesTable_header_7h_txt")}</Table.HeaderCell>
           {/* <Table.HeaderCell>{t("Price (BTC)")}</Table.HeaderCell> */}
-          <Table.HeaderCell>{t("Market Cap (USD)")}</Table.HeaderCell>
-          <Table.HeaderCell>{t("Volume 24h")}</Table.HeaderCell>
+          <Table.HeaderCell>{t("currenciesTable_header_marketCap_txt")}</Table.HeaderCell>
+          <Table.HeaderCell>{t("currenciesTable_header_volumen24h_txt")}</Table.HeaderCell>
           {/* <Table.HeaderCell>{t("Volume 24h (Adjusted)")}</Table.HeaderCell> */}
-          <Table.HeaderCell>{t("Circulating Supply")}</Table.HeaderCell>
+          <Table.HeaderCell>{t("currenciesTable_header_supply_txt")}</Table.HeaderCell>
           {/* <Table.HeaderCell>{t("Total Supply")}</Table.HeaderCell> */}
           {/* <Table.HeaderCell>{t("Max Supply")}</Table.HeaderCell> */}
           {/* Add other header cells based on your Currency interface */}

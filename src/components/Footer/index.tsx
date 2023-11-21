@@ -1,8 +1,11 @@
 import React from 'react';
 import styles from "./styles.module.css";
 import Image from '../../../node_modules/next/image';
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+  const { t, i18n } = useTranslation("global");
+
     return (
         <footer className={styles.footer}>
             <section className={styles.left}>

@@ -1,15 +1,18 @@
 import React from 'react';
 import { Icon } from 'semantic-ui-react';
 import styles from './styles.module.css';
+import { useTranslation } from 'react-i18next';
 
 function Hero() {
+  const { t, i18n } = useTranslation("global");
+    
     return (
         <header className={styles.header}>
             <div className={styles.header_title_container}>
-                <h1>La próxima revolución en el intercambio de criptomonedas</h1>
-                <p>Cripto Million te ayuda a navegar entre los diferentes precios y tendencias</p>
+                <h1>{t("hero_txt_1")}</h1>
+                <p>{t("hero_txt_2")}</p>
                 <a href="#currencies" className={styles.header_button}>
-                Ver criptomonedas <Icon name='arrow down'/>
+                {t("hero_txt_3")}<Icon name='arrow down'/>
                 </a>
             </div>
         </header>

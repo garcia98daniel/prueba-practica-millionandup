@@ -1,0 +1,31 @@
+{
+    "nav_Our_website":"Nuestro sitio",
+    "nav_input_language_placeholder":"Selecciona tu idioma",
+    "nav_txt_1":"Principales 100 Criptomonedas del mercado",
+    
+    "hero_txt_1":"La próxima revolución en el intercambio de criptomonedas",
+    "hero_txt_2":"Cripto Million te ayuda a navegar entre los diferentes precios y tendencias",
+    "hero_txt_3":"Ver criptomonedas",
+
+    "currencies_section_txt_1":"Visibilizamos todas las tazas de cambio.",
+    "currencies_section_txt_2":"Traemos la información en tiempo real de las casas de cambio más importantes del mundo",
+    
+    "currenciesTable_search_currency_input":"Busca tu cripto ...",
+    "currenciesTable_header_symbol_txt":"Symbol",
+    "currenciesTable_header_name_txt":"Name",
+    "currenciesTable_header_priceUSD_txt":"Precio (USD)",
+    "currenciesTable_header_24h_txt":"24h %",
+    "currenciesTable_header_1h_txt":"1h %",
+    "currenciesTable_header_7h_txt":"7d %",
+    "currenciesTable_header_marketCap_txt":"Cap. de Mercado",
+    "currenciesTable_header_volumen24h_txt":"Volumen 24h",
+    "currenciesTable_header_supply_txt":"Acciones en circulación",
+
+    "subscribe_section_txt_1": "Manténgase al tanto de las criptomonedas. Todo el tiempo, en cualquier momento.",
+    "subscribe_section_txt_2": "Por favor, mantenme informado por correo electrónico sobre las últimas noticias relacionadas con criptomonedas, resultados de investigaciones, programas de recompensas, actualizaciones de eventos, listados de monedas y cualquier otra información relevante de CoinMarketCap.",
+    "subscribe_input_txt": "Ingresa tu dirección de correo electronico",
+    "subscribe_section_btn_txt": "Suscribirse",
+    
+    "_txt": ""
+    
+}
