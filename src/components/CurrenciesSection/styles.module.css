@@ -15,11 +15,11 @@
   margin: 0 auto;
 }
 .main_exchange_container .backgroundImg {
-  width: 150px;
+  width: 550px;
   height: 150px;
   margin: 0 auto;
   margin-bottom: 50px;
-  background-image: url("/images/Bitcoin.svg");
+  background-image: url("/images/multicripto.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

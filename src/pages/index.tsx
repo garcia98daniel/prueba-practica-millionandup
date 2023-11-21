@@ -19,7 +19,7 @@ import styles from "./styles.module.css";
 import Footer from "../components/Footer/index";
 
 
-function index() {
+function Home() {
   const { t, i18n } = useTranslation("global");
   return (
     <>
@@ -41,4 +41,4 @@ function index() {
   );
 }
 
-export default index;
+export default Home;
