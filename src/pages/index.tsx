@@ -26,7 +26,7 @@ function index() {
       <Nav />
       <Hero/>
       <main className={styles.main}>
-          <CurrenciesSection />
+          <CurrenciesSection /> 
 
           <section className={styles.bitcoin_img_container}>
             <h2>{t("subscribe_section_txt_1")}</h2>

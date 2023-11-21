@@ -11,7 +11,7 @@ const currencyUrl = `${ROUTE_ENDPOINT}`;
 
 const currencyApi = async () => {
     try {
-      const response = await fetch(`${currencyUrl}/tickers/?start=100&limit=100`, {
+      const response = await fetch(`${currencyUrl}/tickers/?start=1&limit=100`, {
         method: 'GET',
         headers: {
           'Accept': 'application/json',

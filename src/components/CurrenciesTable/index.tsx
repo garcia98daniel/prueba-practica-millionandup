@@ -6,14 +6,20 @@ import { currencyRequesting } from "../../redux/currency/actions";
 import { ICurrencyState, Currency } from "../../ts-types/custom.types";
 import { Input } from "semantic-ui-react";
 
-function CurrenciesTable() {
+//styles
+import styles from "./styles.module.css";
+
+interface currenciesTableProps{
+  filterText:string
+}
+
+function CurrenciesTable({filterText}:currenciesTableProps) {
   const dispatch = useDispatch();
 
   const [t, i18n] = useTranslation("global");
 
   const { requesting, success, error, currency } = useSelector((state: ICurrencyState) => state.currencyReducer);
 
-  const [filterText, setFilterText] = useState(""); // State to store the filter text
 
   useEffect(() => {
     // Initial call when component mounts
@@ -35,14 +41,9 @@ function CurrenciesTable() {
 
   return (
     <>
-      <Input
-        icon="search"
-        placeholder={t("currenciesTable_search_currency_input")}
-        value={filterText}
-        onChange={(e, { value }) => setFilterText(value)}
-      />
+      
 
-    <Table celled>
+    <Table celled className={styles.table} unstackable>
       <Table.Header>
         <Table.Row>
           <Table.HeaderCell>{t("currenciesTable_header_symbol_txt")}</Table.HeaderCell>
@@ -74,9 +75,12 @@ function CurrenciesTable() {
             <Table.Cell>{crypto.name}</Table.Cell>
             {/* <Table.Cell>{crypto.rank}</Table.Cell> */}
             <Table.Cell>{crypto.price_usd}</Table.Cell>
-            <Table.Cell>{crypto.percent_change_24h}</Table.Cell>
-            <Table.Cell>{crypto.percent_change_1h}</Table.Cell>
-            <Table.Cell>{crypto.percent_change_7d}</Table.Cell>
+            <Table.Cell className={parseInt(crypto.percent_change_24h) > 0 ? styles.positive : styles.negative}>
+            {parseInt(crypto.percent_change_24h) > 0 ? <Icon name="caret up"/> : <Icon name="caret down"/>}{crypto.percent_change_24h}</Table.Cell>
+            <Table.Cell className={parseInt(crypto.percent_change_1h) > 0 ? styles.positive : styles.negative}>
+            {parseInt(crypto.percent_change_1h) > 0 ? <Icon name="caret up"/> : <Icon name="caret down"/>}{crypto.percent_change_1h}</Table.Cell>
+            <Table.Cell className={parseInt(crypto.percent_change_7d) > 0 ? styles.positive : styles.negative}>
+            {parseInt(crypto.percent_change_7d) > 0 ? <Icon name="caret up"/> : <Icon name="caret down"/>}{crypto.percent_change_7d}</Table.Cell>
             {/* <Table.Cell>{crypto.price_btc}</Table.Cell> */}
             <Table.Cell>{crypto.market_cap_usd}</Table.Cell>
             <Table.Cell>{crypto.volume24}</Table.Cell>
@@ -91,18 +95,8 @@ function CurrenciesTable() {
 
       <Table.Footer>
         <Table.Row>
-          <Table.HeaderCell colSpan="16"> {/* Adjust the colspan based on the number of header cells */}
-            <Pagination
-              ellipsisItem={{ content: <Icon name='ellipsis horizontal' />, icon: true }}
-              firstItem={{ content: <Icon name='angle double left' />, icon: true }}
-              lastItem={{ content: <Icon name='angle double right' />, icon: true }}
-              prevItem={{ content: <Icon name='angle left' />, icon: true }}
-              nextItem={{ content: <Icon name='angle right' />, icon: true }}
-              totalPages={2}
-            />
+          <Table.HeaderCell colSpan="9"> {/* Adjust the colspan based on the number of header cells */}
           </Table.HeaderCell>
-
-          {/* Add other Table.HeaderCells based on your requirements */}
         </Table.Row>
       </Table.Footer>
     </Table>

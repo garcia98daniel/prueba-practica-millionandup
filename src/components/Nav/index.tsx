@@ -26,6 +26,7 @@ function Nav() {
         <div className={styles.menu_container_link_hidden}>
           <Link href="https://www.millionandup.com/">{t("nav_Our_website")}</Link>
           <Select
+            className={styles.select_language}
             placeholder={t("nav_input_language_placeholder")}
             options={languages}
             value={i18n.language}
