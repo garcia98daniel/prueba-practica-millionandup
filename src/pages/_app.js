@@ -1,7 +1,5 @@
 import '../styles/globals.css';
 import 'semantic-ui-css/semantic.min.css';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import React from 'react'
 import {Provider} from 'react-redux'
 import App from 'next/app'
@@ -9,9 +7,10 @@ import { PersistGate } from 'redux-persist/integration/react';
 
 import configureStore from '../../store';
 
+const { store, persistor } = configureStore();
+
 import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
-const { store, persistor } = configureStore();
 
 import global_en from "../translations/en/global.json";
 import global_es from "../translations/es/global.json";
