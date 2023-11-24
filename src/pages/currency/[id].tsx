@@ -11,6 +11,7 @@ import { Popup } from "semantic-ui-react";
 import { useRouter } from "next/router";
 import Nav from "../../components/Nav";
 import { Button } from "semantic-ui-react";
+import Footer from "../../components/Footer";
 
 
 function CurrencyDetails() {
@@ -95,6 +96,7 @@ function CurrencyDetails() {
         </Table.Row>
       </Table.Footer>
     </Table>
+    <Footer/>
     </>
   );
 }
