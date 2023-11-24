@@ -1,5 +1,8 @@
 import {
   Currency,
+  CurrencyDetailErrorAction,
+  CurrencyDetailRequestingAction,
+  CurrencyDetailSuccessAction,
   CurrencyErrorAction,
   CurrencyRequestingAction,
   CurrencyResetStatesAction,
@@ -7,6 +10,10 @@ import {
 } from "../../ts-types/custom.types";
 
 import {
+  CURRENCY_DETAIL_ERROR,
+  CURRENCY_DETAIL_REQUESTING,
+  CURRENCY_DETAIL_SUCCESS,
+
   CURRENCY_ERROR,
   CURRENCY_REQUESTING,
   CURRENCY_RESET_STATES,
@@ -25,6 +32,22 @@ export const currencySuccess = ( currencies: Currency[] ): CurrencySuccessAction
 
 export const currencyError = (error: any): CurrencyErrorAction => ({
   type: CURRENCY_ERROR,
+  error,
+});
+
+//currency detail
+export const currencyDetailRequesting = (id: string): CurrencyDetailRequestingAction => ({
+  type: CURRENCY_DETAIL_REQUESTING,
+  id
+});
+
+export const currencyDetailSuccess = ( currencies: Currency ): CurrencyDetailSuccessAction => ({
+  type: CURRENCY_DETAIL_SUCCESS,
+  currencies,
+});
+
+export const currencyDetailError = (error: any): CurrencyDetailErrorAction => ({
+  type: CURRENCY_DETAIL_ERROR,
   error,
 });
 

@@ -4,6 +4,9 @@ import {
     CURRENCY_ERROR,
     CURRENCY_SUCCESS,
     CURRENCY_RESET_STATES,
+    CURRENCY_DETAIL_REQUESTING,
+    CURRENCY_DETAIL_SUCCESS,
+    CURRENCY_DETAIL_ERROR,
 } from "./constants";
 
 
@@ -37,6 +40,28 @@ const reducer = (state: CurrencyReducerInitialState = initialState, action: any)
                 requesting: false,
                 error: action.error || '',
             };
+
+        case CURRENCY_DETAIL_REQUESTING:
+            return {
+                ...state,
+                requesting: true,
+                success: false,
+                error: '',
+            };
+        case CURRENCY_DETAIL_SUCCESS:
+            return {
+                ...state,
+                requesting: false,
+                success: true,
+                currency: action.currencies || [],
+            };
+        case CURRENCY_DETAIL_ERROR:
+            return {
+                ...state,
+                requesting: false,
+                error: action.error || '',
+            };
+
         case CURRENCY_RESET_STATES:
             return {
                 ...state,

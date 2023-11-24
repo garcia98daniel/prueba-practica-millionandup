@@ -21,6 +21,10 @@
     "currenciesTable_header_volumen24h_txt": "Volume 24h",
     "currenciesTable_header_supply_txt": "Circulating Supply",
 
+    "currency_more_details_txt":"Click to see more details of ",
+
+    "go_back_txt": "Go Back",
+
     "subscribe_section_txt_1": "Stay updated on cryptocurrencies. All the time, anytime.",
     "subscribe_section_txt_2": "Please keep me informed via email about the latest cryptocurrency-related news, research findings, reward programs, event updates, coin listings, and any other relevant information from CoinMarketCap.",
     "subscribe_input_txt": "Enter your email address",

@@ -1,0 +1,19 @@
+
+.table{
+	min-width:1100px;
+  }
+  
+  
+  
+  .positive{
+  color: rgb(0, 189, 0);
+  }
+  
+  .negative{
+	color: rgb(224, 4, 4);
+  }
+
+  .tittle{
+    text-align: center;
+    font-size: 5em;
+  }

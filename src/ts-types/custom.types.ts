@@ -2,6 +2,11 @@ import {
   CURRENCY_ERROR,
   CURRENCY_REQUESTING,
   CURRENCY_RESET_STATES,
+
+  CURRENCY_DETAIL_REQUESTING,
+  CURRENCY_DETAIL_SUCCESS,
+  CURRENCY_DETAIL_ERROR,
+  
   CURRENCY_SUCCESS,
 }  from "../redux/currency/constants";
 
@@ -53,6 +58,22 @@ export interface CurrencySuccessAction {
 
 export interface CurrencyErrorAction {
   type: typeof CURRENCY_ERROR;
+  error: any; // Reemplaza 'any' con el tipo correcto de 'error'
+}
+
+// these are the actions 
+export interface CurrencyDetailRequestingAction {
+  type: typeof CURRENCY_DETAIL_REQUESTING;
+  id: string
+}
+
+export interface CurrencyDetailSuccessAction {
+  type: typeof CURRENCY_DETAIL_SUCCESS;
+  currencies: Currency; // Reemplaza 'any[]' con el tipo correcto de 'currencies'
+}
+
+export interface CurrencyDetailErrorAction {
+  type: typeof CURRENCY_DETAIL_ERROR;
   error: any; // Reemplaza 'any' con el tipo correcto de 'error'
 }
 
