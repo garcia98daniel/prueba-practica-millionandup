@@ -1,3 +1,14 @@
+## In this project I made use of the most cutting-edge technologies for creating web applications:
+Nextjs: Reactjs library framework, to create applications for the client side.
+- React: Library to create SPAs made with JavaScript created by Facebook.
+- Html5: Allows us to create the structure of a web page, so to speak, its skeleton.
+- CSS3: To give the page a good style and adaptability for different devices.
+- Redux: It is an open source JavaScript library for managing the state of applications.
+- Redux-saga:It is a library that aims to make application side effects (that is, asynchronous things like data retrieval and impure things like browser cache access) easier to manage, more efficient to run, easy to test, and better at handling failures.
+- Backend - API:https://www.coinlore.com/cryptocurrency-data-api
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
